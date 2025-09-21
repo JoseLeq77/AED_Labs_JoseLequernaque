@@ -57,13 +57,13 @@ namespace LequernaqueGalvez
         {
             if (history.Peak == null)
             {
-                InfoText.text = "No Hay Turnos";
+                InfoText.text = "No Hay Movimientos";
             }
             else
             {
                 CustomNode node = history.Peak;
                 IEntity ent = node.Entities[0];
-                InfoText.text = "Turno " + node.TurnNumber + " - " + ent.Name + ": " + ent.Position;
+                InfoText.text = "Movimiento " + node.TurnNumber + " - " + ent.Name + ": " + ent.Position;
             }
         }
 
